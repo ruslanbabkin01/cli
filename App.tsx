@@ -5,14 +5,17 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  Button,
+  Image,
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
+  TextInput,
   useColorScheme,
   View,
 } from 'react-native';
@@ -56,11 +59,18 @@ function Section({children, title}: SectionProps): JSX.Element {
 }
 
 function App(): JSX.Element {
+  const [click, setClick] = useState(0);
+  const [text, onChangeText] = useState('');
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  function clickHandlerBtn() {
+    setClick(prev => prev + 1);
+    console.log(click);
+  }
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -76,6 +86,38 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <TextInput
+            style={styles.input}
+            onChangeText={onChangeText}
+            value={text}
+          />
+          <Text>{text}</Text>
+          <Button
+            onPress={clickHandlerBtn}
+            title="Click me"
+            color="#841584"
+            accessibilityLabel="Click me about this purple button"
+          />
+          <ScrollView style={styles.container}>
+            <Image
+              style={styles.tinyLogo}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+            <Image
+              style={styles.tinyLogo}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+            <Image
+              style={styles.tinyLogo}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+          </ScrollView>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
@@ -112,6 +154,23 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  container: {
+    paddingTop: 20,
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  logo: {
+    width: 66,
+    height: 58,
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
   },
 });
 
