@@ -1,27 +1,27 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, {useState, useEffect} from 'react';
 import {Text, Select, Box, CheckIcon, Image, Center} from 'native-base';
 import {Platform, Dimensions} from 'react-native';
 import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions';
 import data from '../db/films.json';
-// import {movie} from '../interfaces/types';
+import {movie} from '../interfaces/types';
 
-const window = Dimensions.get('window');
-const screen = Dimensions.get('screen');
-
-console.log('Window', window, 'Screen', screen);
+// const window = Dimensions.get('window');
+// const screen = Dimensions.get('screen');
+// console.log('Window', window, 'Screen', screen);
 
 function Task3() {
-  const [films, setFilms] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState('');
+  const [films, setFilms] = useState<movie[]>([]);
+  const [selectedMovie, setSelectedMovie] = useState<movie | undefined>();
   const windowWidth = useWindowDimensions();
-  console.log('WindowDimentionsWidth', windowWidth);
+  // console.log('WindowDimentionsWidth', windowWidth);
 
   useEffect(() => {
     setFilms(data);
   }, []);
 
-  const handleMovieSelect = value => {
-    const selected = films.find(movie => movie.Title === value);
+  const handleMovieSelect = (value: string) => {
+    const selected = films.find(item => item.Title === value);
     setSelectedMovie(selected);
   };
 
