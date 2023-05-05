@@ -10,7 +10,7 @@ import {movie} from '../interfaces/types';
 // const screen = Dimensions.get('screen');
 // console.log('Window', window, 'Screen', screen);
 
-function Task3() {
+function SelectList(): JSX.Element {
   const [films, setFilms] = useState<movie[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<movie | undefined>();
   const windowWidth = useWindowDimensions();
@@ -65,4 +65,4 @@ function Task3() {
   );
 }
 
-export default Task3;
+export default SelectList;

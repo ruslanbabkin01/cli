@@ -4,5 +4,6 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', {endOfLine: 'auto'}],
     'react-native/no-inline-styles': 'off',
+    'no-unused-vars': 'off',
   },
 };
