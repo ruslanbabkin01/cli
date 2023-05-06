@@ -4,15 +4,15 @@ import {Text, Select, Box, CheckIcon, Image, Center} from 'native-base';
 import {Platform, Dimensions} from 'react-native';
 import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions';
 import data from '../db/films.json';
-import {movie} from '../interfaces/types';
+import {Imovie} from '../interfaces/types';
 
 // const window = Dimensions.get('window');
 // const screen = Dimensions.get('screen');
 // console.log('Window', window, 'Screen', screen);
 
 function SelectList(): JSX.Element {
-  const [films, setFilms] = useState<movie[]>([]);
-  const [selectedMovie, setSelectedMovie] = useState<movie | undefined>();
+  const [films, setFilms] = useState<Imovie[]>([]);
+  const [selectedMovie, setSelectedMovie] = useState<Imovie | undefined>();
   const windowWidth = useWindowDimensions();
   // console.log('WindowDimentionsWidth', windowWidth);
 

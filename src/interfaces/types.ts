@@ -1,4 +1,4 @@
-export interface movie {
+export interface Imovie {
   Title: string;
   Year: number;
   Rated: string;
@@ -13,4 +13,12 @@ export interface movie {
   Country: string;
   Awards: string;
   Poster: string;
+}
+
+export interface ICurrencie {
+  name: string;
+  id: string;
+  symbol: string;
+  code: string;
+  price: number;
 }

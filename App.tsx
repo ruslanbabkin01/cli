@@ -9,6 +9,8 @@ import ProfileScreen from './src/screens/ProfileScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {Provider} from 'react-redux';
+import {store} from './src/redux/store';
 
 const TabNavigator = createBottomTabNavigator();
 const MyStack = createNativeStackNavigator();
@@ -40,18 +42,20 @@ const TabPage = () => {
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>
-      <NativeBaseProvider>
-        <SafeAreaView style={styles.sectionContainer}>
-          <MyStack.Navigator
-            initialRouteName="TabPage"
-            screenOptions={{headerShown: false}}>
-            <MyStack.Screen name="TabPage" component={TabPage} />
-            <MyStack.Screen name="Details" component={DetailsScreen} />
-          </MyStack.Navigator>
-        </SafeAreaView>
-      </NativeBaseProvider>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <NativeBaseProvider>
+          <SafeAreaView style={styles.sectionContainer}>
+            <MyStack.Navigator
+              initialRouteName="TabPage"
+              screenOptions={{headerShown: false}}>
+              <MyStack.Screen name="TabPage" component={TabPage} />
+              <MyStack.Screen name="Details" component={DetailsScreen} />
+            </MyStack.Navigator>
+          </SafeAreaView>
+        </NativeBaseProvider>
+      </NavigationContainer>
+    </Provider>
   );
 }
 

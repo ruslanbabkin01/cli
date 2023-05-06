@@ -1,0 +1,171 @@
+[
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "usym": "₿",
+        "gecko": "bitcoin",
+        "price": 150
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "usym": "Ξ",
+        "gecko": "ethereum",
+        "price": 75
+    },
+    {
+        "name": "Tether",
+        "symbol": "USDT",
+        "usym": "₮",
+        "gecko": "tether",
+        "price": 53
+    },
+    {
+        "name": "Cardano",
+        "symbol": "ADA",
+        "usym": "₳",
+        "gecko": "cardano",
+        "price": 25
+    },
+    {
+        "name": "XRP",
+        "symbol": "XRP",
+        "usym": "✕",
+        "gecko": "ripple",
+        "price": 96
+    },
+    {
+        "name": "Solana",
+        "symbol": "SOL",
+        "usym": "◎",
+        "gecko": "solana",
+        "price": 36
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "usym": "●",
+        "gecko": "polkadot",
+        "price": 74
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "usym": "Ð",
+        "gecko": "dogecoin",
+        "price": 86
+    },
+    {
+        "name": "Dai",
+        "symbol": "DAI",
+        "usym": "◈",
+        "gecko": "dai",
+        "price": 18
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "usym": "Ł",
+        "gecko": "litecoin",
+        "price": 13
+    },
+    {
+        "name": "Algorand",
+        "symbol": "ALGO",
+        "usym": "Ⱥ",
+        "gecko": "algorand",
+        "price": 63
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "BCH",
+        "usym": "Ƀ",
+        "gecko": "bitcoin-cash",
+        "price": 85
+    },
+    {
+        "name": "ECOMI",
+        "symbol": "OMI",
+        "usym": "Ο",
+        "gecko": "ecomi",
+        "price": 89
+    },
+    {
+        "name": "Internet Computer",
+        "symbol": "ICP",
+        "usym": "∞",
+        "gecko": "internet-computer","price": 166
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "usym": "ξ",
+        "gecko": "ethereum-classic","price": 70
+    },
+    {
+        "name": "Monero",
+        "symbol": "XMR",
+        "usym": "ɱ",
+        "gecko": "monero","price": 60
+    },
+    {
+        "name": "Tezos",
+        "symbol": "XTZ",
+        "usym": "ꜩ",
+        "gecko": "tezos","price": 30
+    },
+    {
+        "name": "Iota",
+        "symbol": "MIOTA",
+        "usym": "ɨ",
+        "gecko": "iota","price": 200
+    },
+    {
+        "name": "EOS",
+        "symbol": "EOS",
+        "usym": "ε",
+        "gecko": "eos","price": 300
+    },
+    {
+        "name": "Bitcoin SV",
+        "symbol": "BSV",
+        "usym": "Ɓ",
+        "gecko": "bitcoin-cash-sv","price": 50
+    },
+    {
+        "name": "Maker",
+        "symbol": "MKR",
+        "usym": "Μ",
+        "gecko": "maker","price": 10
+    },
+    {
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "usym": "ⓩ",
+        "gecko": "zcash","price": 109
+    },
+    {
+        "name": "Dash",
+        "symbol": "DASH",
+        "usym": "Đ",
+        "gecko": "dash","price": 105
+    },
+    {
+        "name": "Nano",
+        "symbol": "XNO",
+        "usym": "Ӿ",
+        "gecko": "nano","price": 148
+    },
+    {
+        "name": "Augur",
+        "symbol": "REP",
+        "usym": "Ɍ",
+        "gecko": "augur","price": 130
+    },
+    {
+        "name": "Steem",
+        "symbol": "STEEM",
+        "usym": "ȿ",
+        "gecko": "steem","price": 120
+    }
+]
