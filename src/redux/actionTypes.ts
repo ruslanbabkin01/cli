@@ -1,3 +1,3 @@
-export const CURRENCIES_FETCH_REQUESTED = 'CURRENCIES_FETCH_REQUESTED';
+export const CURRENCIES_FETCH_REQUESTED = 'fetchRequested/currencie';
 
-export const FETCH_CURRENCIES = 'CURRENCIES_FETCH_SUCCEEDED';
+export const FETCH_CURRENCIES = 'fetchSucceeded/currencie';

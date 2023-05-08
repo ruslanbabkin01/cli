@@ -1,5 +1,4 @@
 import {FETCH_CURRENCIES} from './actionTypes';
-// import {ICurrencie} from '../interfaces/types';
 
 const initialState = {
   currencies: [],

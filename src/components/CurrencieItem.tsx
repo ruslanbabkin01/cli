@@ -1,4 +1,5 @@
-import {Button, Card, Text} from 'native-base';
+import {Card, Text} from 'native-base';
+import {Button} from 'react-native';
 import React from 'react';
 import {ICurrencie} from '../interfaces/types';
 
@@ -19,7 +20,7 @@ const CurrencieItem: React.FC<ICurrencieItemProps> = ({
       </Text>
       <Text>Code: {code}</Text>
       <Text>Price: {price}</Text>
-      <Button>Buy</Button>
+      <Button title="Buy" />
     </Card>
   );
 };
